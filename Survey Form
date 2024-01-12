@@ -1,0 +1,80 @@
+JAVA SCRIPT:
+const survey = new Survey.Model(json);
+survey.onComplete.add((sender, options) => {
+    console.log(JSON.stringify(sender.data, null, 3));
+});
+
+$("#surveyElement").Survey({ model: survey });
+
+HTML page:
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/survey-jquery@1.9.125/survey.jquery.min.js"></script>
+    <script src="https://unpkg.com/survey-jquery@1.9.125/themes/index.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/survey-jquery@1.9.125/defaultV2.min.css" />
+    <link rel="stylesheet" href ="./index.css" />
+  </head>
+  <body>
+    <div id="surveyElement" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
+    <script src="./json.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
+
+JSON file:
+const json = {
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "satisfaction-numeric",
+          "title": "How satisfied are you with our product?",
+          "description": "Numeric rating scale",
+          "autoGenerate": false,
+          "rateCount": 10,
+          "rateValues": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+        },
+        {
+          "type": "rating",
+          "name": "satisfaction-stars",
+          "title": "How satisfied are you with our product?",
+          "description": "Star rating scale",
+          "rateType": "stars",
+          "rateCount": 10,
+          "rateMax": 10,
+          "displayMode": "buttons"
+        },
+        {
+          "type": "rating",
+          "name": "satisfaction-smileys-monochrome",
+          "title": "How satisfied are you with our product?",
+          "description": "Smiley rating with monochrome scale",
+          "rateType": "smileys",
+          "rateCount": 10,
+          "rateMax": 10,
+          "displayMode": "buttons"
+        },
+        {
+          "type": "rating",
+          "name": "satisfaction-smileys-colored",
+          "title": "How satisfied are you with our product?",
+          "description": "Smiley rating with colored scale",
+          "rateType": "smileys",
+          "scaleColorMode": "colored",
+          "rateCount": 10,
+          "rateMax": 10,
+          "displayMode": "buttons"
+        }
+      ]
+    }
+  ],
+  "showQuestionNumbers": "off"
+};
+
+
+source:
+https://surveyjs.io/form-library/examples/rating-scale/jquery#content-code
