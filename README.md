@@ -47,3 +47,7 @@ Harnessing the power of machine learning, our platform goes beyond data collecti
 - **Customizable Reporting:**
   - Companies benefit from customizable reporting features, allowing them to visualize and interpret survey results in a way that aligns with their unique business goals.
   - The analysis reports serve as a guide for strategic planning and iterative enhancements.
+
+### Workflow of our System
+
+![System_workflow](https://github.com/UjjwalMishra01/Code_Busters_Udgam24_Encode/assets/117208679/720cedcc-ee0b-440f-8d92-2a75827d249c)
