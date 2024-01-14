@@ -52,7 +52,7 @@ Harnessing the power of machine learning, our platform goes beyond data collecti
 
 ![System_workflow](https://github.com/UjjwalMishra01/Code_Busters_Udgam24_Encode/assets/117208679/720cedcc-ee0b-440f-8d92-2a75827d249c)
 
-** Explanatory Video link :** https://youtu.be/hekJS__LrRs
+## Explanatory Video link : https://youtu.be/hekJS__LrRs
 
 
 
